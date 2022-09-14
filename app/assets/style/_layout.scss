@@ -39,12 +39,14 @@
         align-items: center;
       }
       .headerRight{
-        padding-left:-12px;
+        width: 100%;
       }
       .menu{
         flex-wrap: wrap;
       }
       .menuItems{
+        padding: 0 0;
+        width: 50%;
         border: #fff solid 1px;
         height: 48px;
       } 
