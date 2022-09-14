@@ -1,0 +1,67 @@
+.banner{
+    background-image: url(/assets/images/home-header.png);
+    background-size: cover;
+    height: 787px;
+    background-position: center;
+    @include mobile{
+        background-image: url(/assets/images/home-header-sm.png);
+        height: 396px;
+    }
+}
+.slogan{
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.sloganContent{
+    color: $primaryDark;
+    text-align: right;
+    h1{
+        font-weight: 900;
+    }
+    h5{
+        margin-top: 10px;
+        a{
+            text-decoration: none;
+            color: #FFF;
+            padding: 6px 12px;
+            background-color: $primary;
+        }
+    }
+}
+
+
+.section1{
+    background-color: $primaryLight;
+    padding: 80px 0;
+    text-align: center;
+    h2{
+        color: $primaryDark;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+}
+
+.introGroup{
+    display: flex;
+    .introItems{
+        width: 25%;
+        padding: 0 12px;
+        img{
+            width: 100px;
+            margin-bottom: 16px;
+        }
+        h4{
+            color: $primaryDark;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    @include pad{
+        flex-wrap: wrap;
+    }
+}

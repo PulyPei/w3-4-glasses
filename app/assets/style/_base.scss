@@ -1,0 +1,31 @@
+@mixin pad {
+  @media(max-width: 768px){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width: 375px){
+    @content;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include pad {
+    max-width: 720px;
+  }
+  @include mobile {
+    max-width: 373px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
