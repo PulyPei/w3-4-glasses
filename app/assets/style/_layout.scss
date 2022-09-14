@@ -43,12 +43,15 @@
       }
       .menu{
         flex-wrap: wrap;
+        li{
+          width: 50%;
+        }
       }
       .menuItems{
-        padding: 0 0;
-        width: 50%;
+        display:block;
+        text-align: center;
         border: #fff solid 1px;
-        height: 48px;
+        padding: 10% 20%;
       } 
       }
     }
